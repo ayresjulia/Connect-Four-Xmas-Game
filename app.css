@@ -1,0 +1,87 @@
+body {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	background: url('https://wallpaperaccess.com/full/809281.jpg');
+	background-size: 120% 140%;
+	background-repeat: no-repeat;
+	color: #f03f35;
+	text-align: center;
+}
+.xmas {
+	/* transition: color 1000ms; */
+	font-size: 60px;
+	font-family: 'Mountains of Christmas', cursive;
+	color: green;
+}
+#popup {
+	width: 100%;
+}
+
+h1 {
+	margin-top: 0px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	margin-bottom: 0px;
+}
+
+#h6 {
+	margin-top: 0px;
+	font-size: 19px;
+}
+
+#board {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	background-color: rgba(31, 58, 147, 0.9);
+	padding: 10px;
+}
+
+#board td {
+	width: 55px;
+	height: 55px;
+	border: solid 1px rgba(255, 255, 255, 1);
+	border-radius: 40px;
+}
+
+.piece {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.piece.p1 {
+	background: url('https://i.pinimg.com/originals/31/54/df/3154dfe8c70b7fcb5dbb5acad721a9f5.jpg');
+	background-size: cover;
+}
+
+.piece.p2 {
+	background: url('https://media.istockphoto.com/vectors/santa-claus-father-christmas-cartoon-character-vector-id1165876122?k=6&m=1165876122&s=612x612&w=0&h=_l7jScovJkGpvUONCNNwcyBrA8bgy9tFTEnCVtHgnxM=');
+	background-size: cover;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+	border: dashed 1px rgba(255, 255, 255, 1);
+}
+
+#column-top td:hover {
+	background-color: rgb(21, 148, 21);
+}
+
+/* falling object animation */
+
+.fall {
+	animation-name: fall-animation;
+	animation-duration: 500ms;
+}
+
+@keyframes fall-animation {
+	from {
+		transform: translateY(-250px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
