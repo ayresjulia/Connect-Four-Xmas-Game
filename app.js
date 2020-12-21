@@ -53,9 +53,9 @@ function makeHtmlBoard() {
 	top.addEventListener('click', handleClick);
 
 	//iterate through width
-	for (var x = 0; x < WIDTH; x++) {
+	for (let x = 0; x < WIDTH; x++) {
 		//create the table data element, call it headCell
-		var headCell = document.createElement('td');
+		let headCell = document.createElement('td');
 		//set id of headCell to x
 		headCell.setAttribute('id', x);
 		//make headCell a child of top line
@@ -69,7 +69,7 @@ function makeHtmlBoard() {
 		//create row element
 		const row = document.createElement('tr');
 		//iterate throught width to create cell element
-		for (var x = 0; x < WIDTH; x++) {
+		for (let x = 0; x < WIDTH; x++) {
 			//create cell element
 			const cell = document.createElement('td');
 			//create cell id
